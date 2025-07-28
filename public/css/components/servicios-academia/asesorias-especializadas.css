@@ -1,0 +1,148 @@
+/* Estilo del contenedor de la sección */
+.asesoriasEspecializadasContainer {
+    width: 100%;
+    height: auto;
+    /*height: 1920px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding-right: 4%;
+    padding-left: 2%; 
+}
+
+/* Estilo del titulo de la sección */
+.asesoriasEspecializadasTitle {
+    width: 100%;
+    height: auto;
+    margin-top: 160px;
+    margin-bottom: 80px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.55px;
+    text-align: center;
+}
+
+/* Estilo del titulo de la subsección */
+.comoSolicitarAsesoriasTitle {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.55px;
+    text-align: center;
+}
+
+/* Contenedor de las cards de la subsección "¿Cómo Solicitar Asesorías?" */
+.comoSolicitarAsesoriasCardsContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 10px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin-left: 4%;
+    margin-right: calc(4%-0px);
+}
+
+@media (min-width:2000px ){
+    .comoSolicitarAsesoriasCardsContainer{
+        width: 85%;
+    }
+}
+.comoSolicitarAsesoriasCardsContainer:hover {
+    overflow-x: auto;
+}
+/* Estilo de las cards de la subsección "¿Qué ofrecemos?" */
+.comoSolicitarAsesoriasCard {
+    flex: 0 0 calc(33.33% - 20px);
+    height: 688px;
+    flex-shrink: 0;
+    border-radius: var(--Corner-Large, 16px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+   
+   
+}
+
+@media(max-width:1000px){
+    .comoSolicitarAsesoriasCard{
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+@media(max-width:500px){
+    .comoSolicitarAsesoriasCard{
+        flex: 0 0 calc(100% - 5px);
+        
+    }
+}
+/* Estilos de la figura de la card */
+.comoSolicitarAsesoriasCardFigure {
+    width: 104%;
+    height: auto;
+    position: absolute;
+    bottom: -1%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-2%); 
+    
+}
+
+.comoSolicitarAsesoriasCardFigure svg {
+    width: 98%;
+    height: auto; 
+    display: block;
+}
+/* Estilo para el titulo de la card */
+.comoSolicitarAsesoriasCardTitle {
+    width:90%;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    text-align: center;
+    margin-top: 16%;
+}
+
+/* Estilo para el contenido de la card */
+.comoSolicitarAsesoriasCardContent {
+    width: 90%;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}
+@media (max-width: 1200px){
+    .comoSolicitarAsesoriasCardContent{
+        font-size: 25px;
+        left: 20px;
+        bottom: 10px;
+    }
+}

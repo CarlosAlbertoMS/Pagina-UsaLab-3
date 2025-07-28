@@ -1,0 +1,118 @@
+.requisitoppcont{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.requisitoppCard{
+    position: relative;
+    width: 100%;
+    height: 324px;
+    margin: 20px 0 20px 0;
+}
+
+.requisitoppCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.requisitopptitulo{
+    width: 600px;
+    flex-shrink: 0;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    position: absolute;
+    top:50%;
+    left: 50px;
+    transform: translate(0%, -50%);
+}
+
+.requisitoppp{
+    width: 600px;
+    flex-shrink: 0;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.32px;
+
+    position: absolute;
+    top:50%;
+    right: 10px;
+    transform: translate(0%, -50%);
+}
+
+@media (max-width: 768px) {
+
+  .requisitoppCard {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .requisitoppCard img {
+    height: 100%;
+  }
+
+  .requisitopptitulo,
+  .requisitoppp {
+    width: 90%;
+    position: static;
+    transform: none;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .requisitopptitulo {
+    font-size: 28px;
+  }
+
+  .requisitoppp {
+    font-size: 18px;
+  }
+
+  .requisitoppCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .requisitoppCard img {
+    position: absolute;
+    z-index: -1;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (min-height: 512px) and (max-height: 1366px){
+    .requisitopptitulo{
+        width: 415px;
+        font-size: 40px;
+        left: 20px;
+    }
+
+    .requisitoppp{
+        font-size: 20px;
+    }
+    .requisitoppcont{
+      width: 100%;
+    }
+}

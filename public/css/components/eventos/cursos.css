@@ -1,0 +1,39 @@
+@media (min-width: 1921px) {
+    .contenedorSubtituloCursos,
+    .contenedorSubtituloProfesores {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .contenedorSubtituloCursos,
+    .contenedorSubtituloProfesores {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedorSubtituloCursos {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 430px) {
+    .contenedorSubtituloCursos {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    } 
+
+    .subtitulo {
+        font-size: 1.8rem;
+    }
+
+    .separadorCursos {
+        margin-top: 1rem;
+    }
+}

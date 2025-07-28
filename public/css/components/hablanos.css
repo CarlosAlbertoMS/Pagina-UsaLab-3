@@ -1,0 +1,113 @@
+/**************** SECCIÓN: HÁBLANOS DE TU PROYECTO ****************/
+
+/* Contenedor de la sección */
+.hablanosContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 256px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+    padding: 0 5%;
+}
+
+/* Subcontenedor */
+.hablanos {
+    display: flex;
+    max-width: 90%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+/* Título */
+.hablanos-title {
+    max-width: 80%;
+    color: #06052D;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+/* Texto de la sección */
+.hablanos-text {
+    max-width: 90%;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2vw;
+}
+
+/* Botón */
+.hablanos-button {
+    width: 15vw;
+    height: 8vh;
+    border-radius: 50px;
+    background: #06052D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 2vw;
+    transition: all 0.3s ease;
+}
+
+.hablanos-button:hover {
+    width: 16vw;
+    height: 9vh;
+    font-size: 2.2vw;
+}
+
+/* 🔹 MEDIA QUERIES */
+
+/* 📱 Móviles */
+@media (max-width: 768px) {
+    .hablanos-title {
+        font-size: 6vw;
+    }
+
+    .hablanos-text {
+        font-size: 4vw;
+    }
+
+    .hablanos-button {
+        width: 40vw;
+        height: 10vh;
+        font-size: 4vw;
+    }
+
+    .hablanos-button:hover {
+        width: 45vw;
+        height: 11vh;
+        font-size: 4.2vw;
+    }
+}
+
+/* 🖥 Pantallas grandes */
+@media (min-width: 1200px) {
+    .hablanos-title {
+        font-size: 55px;
+    }
+
+    .hablanos-text {
+        font-size: 32px;
+    }
+
+    .hablanos-button {
+        width: 272px;
+        height: 64px;
+        font-size: 32px;
+    }
+
+    .hablanos-button:hover {
+        width: 308.7px;
+        height: 66px;
+        font-size: 36px;
+    }
+}

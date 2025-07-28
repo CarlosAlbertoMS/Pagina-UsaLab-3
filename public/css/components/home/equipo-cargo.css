@@ -1,0 +1,76 @@
+/***** Contenedor Equipo de desarrollo *****/
+.equipoCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: clamp(1rem, 3vw, 2rem); /* Espaciado dinámico */
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/***** Título equipo de desarrollo *****/
+.equipotitle {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: clamp(32px, 5vw, 55px);
+    font-weight: 600;
+    color: #0F0000;
+}
+
+/***** Contenedor de equipo *****/
+.eq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(1rem, 3vw, 2rem); /* Ajustado para evitar overflow */
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/***** Sección individual del equipo *****/
+.eq1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 45%; /* Ajusta automáticamente */
+    max-width: 350px; /* Evita tamaños excesivos */
+    box-sizing: border-box;
+}
+
+/***** Imágenes responsivas *****/
+.eq1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/***** Nombres equipo de desarrollo *****/
+.nome1, .nome2 {
+    width: 100%;
+    max-width: 336px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 700;
+    color: #000;
+}
+
+/***** Responsividad *****/
+@media (max-width: 768px) {
+    .eq {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .eq1 {
+        width: 100%;
+    }
+
+    .equipotitle {
+        font-size: 32px;
+    }
+}

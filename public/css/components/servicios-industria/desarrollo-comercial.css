@@ -1,0 +1,53 @@
+/* Estilo del contenedor de la sección */
+.desarrolloComercialContainer {
+    margin-top: 160px;
+    margin-bottom: 160px;
+    width: 100%;
+
+    height: auto;
+
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+/* Estilo del titulo de la sección */
+.desarrolloComercialTitle {
+    margin-top: 80px;
+    margin-bottom: 82px;
+    color: #FCFEF9;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.55px;
+}
+
+/* Estilo del texto de la sección */
+.desarrolloComercialText {
+    width: 100%;
+
+    color: #FAFAF9;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: 1.1;
+    letter-spacing: 0.64px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    hyphens: auto;
+}
+
+@media(max-width:500px){
+    .desarrolloComercialText{
+        font-size: 22px;
+        padding: 20px;
+    }
+}

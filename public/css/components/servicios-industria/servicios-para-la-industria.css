@@ -1,0 +1,50 @@
+/* Contenedor de la sección */
+.serviciosParaLaIndustriaContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between; 
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+/* Titulo de la sección */
+.serviciosParaLaIndustriaTitle {
+    width: 100%;
+    text-align: center;
+    margin-top: 160px;
+    margin-bottom: 60px;    
+    height: auto;
+    color: #000;
+    
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.55px;
+}
+
+/* Descripción de la sección */
+.serviciosParaLaIndustriaDescription{
+    width: 80%;
+    height: auto;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    hyphens: auto;
+}
+@media(max-width:500px){
+   .serviciosParaLaIndustriaDescription{
+        
+        font-size:22px;
+       
+    }
+}

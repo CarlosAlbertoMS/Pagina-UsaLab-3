@@ -1,0 +1,58 @@
+/* @media (min-width: 1921px) {
+    .subtituloTalleres,
+    .subtituloTalleristas {
+        font-size: 4rem;
+    }
+} */
+
+/* @media (max-width: 1440px) {
+    .contenedorSubtituloTalleres,
+    .contenedorSubtituloTalleristas {
+        margin-top: 3rem;
+    }
+    
+    .contenedorCards {
+        height: 90vh;
+        gap: 4rem;
+        margin-top: 3rem;
+    }
+} */
+
+@media (max-width: 768px) {
+    .contenedorSubtituloTalleres {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .subtituloTalleres,
+    .subtituloTalleristas {
+        font-size: 2rem;
+    }
+
+    .contenedorCards {
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 430px) {
+    .subtituloTalleres,
+    .subtituloTalleristas {
+        font-size: 1.8rem;
+    }
+
+    .contenedorSubtituloTalleres,
+    .contenedorSubtituloTalleristas {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .contenedorCards {
+        height: 180vh;
+        gap: 0rem;
+        margin-top: 0.5rem;
+    }
+
+    .separadorTalleres {
+        margin-top: 1rem;
+    }
+}

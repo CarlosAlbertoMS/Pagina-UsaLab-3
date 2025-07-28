@@ -1,0 +1,138 @@
+.ultimos-eventos-container {
+    display: flex;
+    width: 95%;
+    height: 45%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--margin-big);
+}
+
+.ultimos-eventos-title {
+    width: 40%;
+}
+
+.ultimos-eventos-title h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.ultimos-eventos-cards {
+    width: 60%;
+    height: 50vh;
+    /* max-width: 20rem; */
+    /* max-height: 20rem; */
+    min-height: 18rem;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.event-card {
+    position: relative;
+    width: 40%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    border-radius: var(--Corner-Medium, 12px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 0.8rem 2rem 0.8rem;
+}
+
+.event-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(120, 135, 150, 0.25);
+    z-index: 0;
+    border-radius: 8px;
+}
+
+.event-card.card1 {
+    background-image: url(../../../photos/hci.png);
+    background-position: 65% 50%;
+}
+
+.event-card.card2 {
+    background-image: url(../../../photos/chi1.png);
+    background-position: 47% 50%;
+}
+
+.event-card.card3 {
+    background-image: url(../../../photos/feria1.png);
+    background-position: 47% 50%;
+}
+
+.title-event-card {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.55px;
+}
+
+.title-event-card, 
+.text-event-card {
+    position: relative;
+    z-index: 1;
+}
+
+.text-event-card {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-style: normal;
+    text-align: justify;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+@media (max-width: 1024px) {
+    .ultimos-eventos-cards {
+        width: 75%;
+    }
+
+    .event-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    .ultimos-eventos-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ultimos-eventos-title {
+        width: 100%;
+        padding: 0
+    }
+
+    .ultimos-eventos-cards {
+        width: 75%;
+        min-width: 16rem;
+        min-height: 350px;
+    }
+
+    .event-card {
+        width: 85%;
+        max-width: 15rem;
+    }
+
+    br.responsive {
+        display: none;
+    }
+}

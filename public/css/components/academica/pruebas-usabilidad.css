@@ -1,0 +1,415 @@
+.pruebausalab {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+}
+
+.pruebausalabtxt {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 610px;
+}
+
+.pruebausalabtitle {
+    width: 658px;
+    height: 82px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.55px;
+}
+
+.pruebausalabp {
+    width: 650px;
+    height: 409px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+
+.pruebausalabimg {
+    width: 604px;
+    height: 812px;
+    flex-shrink: 0;
+    border-radius: var(--Corner-Medium, 12px);
+}
+
+.pruebaslaboratorio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 68px;
+}
+
+.pruebaslaboratoriotitle {
+    width: 312px;
+    flex-shrink: 0;
+    color: #090000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.pruebaslaboratoriotxt {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.pruebaslaboratoriop {
+    width: 900px;
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pruebas1 {
+    width: 100%;
+    height: 513.677px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.usabilidad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 68px;
+}
+
+.usabilidadtitle {
+    width: 311px;
+    color: #0B0000;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.usabilidadcont {
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+}
+
+.usabilidadp {
+    width: 900px;
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.pruebas2 {
+    width: 100%;
+    height: 484.571px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.heuristica {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.heuristicatitle {
+    width: 313px;
+    color: #0C0000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.heuristicacont {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.heuristicap {
+    width: 900px;
+    height: 428px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.requisitosp {
+    display: flex;
+}
+
+.requisitosptitle {
+    width: 606px;
+    color: #0B0000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.requisitoss {
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.requisitosstitle {
+    width: 606px;
+    color: #0B0000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/*****Estilos para las tarjetas del svg***********/
+.contenedorTar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 24px; 
+    max-width: 1378px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.tarjeta {
+    width: 410px;
+    height: 614px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.tituloTar
+{
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: -10px;
+    left: 49%;
+    transform: translateX(-50%);
+    fill: rgba(72, 144, 176, 0.90);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* Cambio de color */
+.tarjeta:hover path{
+    fill: #A7C741;
+}
+.tarjeta path{
+    width: 448px;
+    transition: fill 0.3s ease-in-out;
+}
+
+
+
+.tituloTarTexto
+{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 430px;
+}
+
+
+/* ------- Media Query para móviles -------- */
+@media (max-width: 768px) {
+
+  .pruebausalab, 
+  .pruebaslaboratorio,
+  .usabilidad,
+  .heuristica {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .pruebausalabtxt, 
+  .pruebaslaboratoriotxt,
+  .usabilidadcont,
+  .heuristicacont,
+  .requisitoss {
+    width: 100%;
+    gap: 40px;
+    padding: 0 10px;
+  }
+
+  .pruebausalabtitle, 
+  .pruebaslaboratoriotitle, 
+  .usabilidadtitle, 
+  .heuristicatitle, 
+  .requisitosptitle, 
+  .requisitosstitle {
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .pruebausalabp,
+  .pruebaslaboratoriop,
+  .usabilidadp,
+  .heuristicap {
+    width: 100%;
+    font-size: 20px;
+    height: auto;
+  }
+
+  .pruebausalabimg
+   {
+    width: 90%;
+    height: auto;
+  }
+  .pruebas1,
+  .pruebas2{
+     width: 100%;
+    height: auto;
+  }
+
+  .contenedorTar {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .tarjeta {
+    width: 90%;
+    height: auto;
+  }
+
+  .tituloTarTexto {
+    font-size: 24px;
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (min-height: 512px) and (max-height: 1366px) {
+    .pruebausalabtitle {
+        height: 82px;
+        font-size: 43px;
+    }
+
+    .pruebausalabimg {
+        width: 50%;
+        height: 70%;
+    }
+
+    .pruebausalab {
+        gap: 10%;
+    }
+
+    .pruebausalabp {
+        width: 100%;
+        height: 307px;
+        font-size: 25px;
+    }
+
+    .pruebausalabtxt {
+        gap: 50px;
+    }
+
+    .contenedorTar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        max-width: 1378px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .tarjeta{
+        width: 360px;
+        height: 600px;
+    }
+
+    .pruebaslaboratorio{
+        justify-content: flex-start;
+
+    }
+
+    .pruebaslaboratoriop{
+        font-size: 25px;
+    }
+
+    .pruebaslaboratoriotitle{
+        font-size: 37px;
+    }
+
+    .usabilidad{
+        gap: 38px;
+        justify-content: flex-start;
+    }
+
+    .usabilidadp{
+        font-size: 25px;
+    }
+
+    .usabilidadtitle{
+        font-size: 35px;
+    }
+
+    .heuristicap{
+        width: 562px;
+        font-size: 25px;
+    }
+
+    .heuristicatitle{
+        font-size: 35px;
+    }
+
+}

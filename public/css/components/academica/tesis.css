@@ -1,0 +1,218 @@
+.ofrecimento {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+
+.tituloT {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 5vw; /* Usamos 'vw' para el tamaño relativo al ancho de la pantalla */
+    font-weight: 700;
+    letter-spacing: 0.55px;
+    justify-content: center;
+    display: flex;
+    margin-top: 5%;
+}
+
+.tableQOT {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    overflow-x: auto; /* Asegura que si el contenido se desborda, se pueda desplazar horizontalmente */
+}
+
+.tabla1, .tabla2, .tabla3 {
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 468px; /* Se vuelve a establecer el ancho original */
+    margin: 0 20px; /* Añadí márgenes para espacio entre las tablas */
+}
+
+
+
+.lineaTT {
+    width: 1164px;
+    height: 2px;
+    background-color: #000;
+    margin: 23px auto 28px auto;
+}
+
+.lineaTT1 {
+    background-color: #000;
+    width: 2px;
+    height: 435px;
+    margin: 0px 43px 11px 36px;
+}
+
+.tituloQOT {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.parrafoQOT {
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.contRT{
+    width: initial;
+    height: 80%;
+}
+.requisitosTesis {
+    background-color: #06052D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tituloRT {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 55px; /* Ajuste para hacerlo más pequeño y responsivo */
+    font-weight: 700;
+    letter-spacing: 0.55px;
+    margin: 5% ;
+    flex-basis: 100%; /* Asegura que el título ocupe el 100% del ancho */
+}
+
+.subRT {
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px; /* Ajuste para el subtítulo */
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    margin: 5%;
+    flex-basis: 48%; /* Coloca este elemento en una columna */
+}
+
+.cuerpoRT {
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px; /* Ajuste para el cuerpo del texto */
+    font-weight: 400;
+    margin:  5%;
+}
+
+.requisitosTesis img {
+    width: 40%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+  .ofrecimento {
+    padding-left: 3%;
+    margin-bottom: 8%;
+  }
+
+  .tituloT {
+    font-size: 7vw;
+    margin-top: 8%;
+    text-align: center;
+  }
+
+  .tableQOT {
+    flex-direction: column;
+    overflow-x: unset;
+    align-items: center;
+  }
+
+  .tabla1, .tabla2, .tabla3 {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .lineaTT {
+    width: 90%;
+    height: 1px;
+  }
+
+  .lineaTT1 {
+    display: none; /* Línea vertical innecesaria en móvil */
+  }
+
+  .tituloQOT {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .parrafoQOT {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .requisitosTesis {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .requisitosTesis img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .tituloRT {
+    font-size: 32px;
+    margin: 20px 0;
+  }
+
+  .subRT {
+    font-size: 20px;
+    margin: 10px 0;
+    flex-basis: 100%;
+  }
+
+  .cuerpoRT {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (min-height: 512px) and (max-height: 1366px){
+    .requisitosTesis img{
+        width: 50%;
+        height: fit-content;
+    }
+
+    .tituloRT{
+        font-size: 33px;
+    }
+
+    .subRT{
+        font-size: 15px;
+    }
+
+    .cuerpoRT{
+        font-size: 13px;
+    }
+
+    .parrafoQOT{
+        font-size: 22px;
+    }
+
+    .tituloQOT{
+        font-size: 25px;
+    }
+}
+@media (max-width: 767px) {
+  .solo-escritorio {
+    display: none;
+  }
+}

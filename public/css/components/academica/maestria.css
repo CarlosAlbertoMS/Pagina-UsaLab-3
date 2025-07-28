@@ -1,0 +1,429 @@
+/*** Letreo verde de los objetivos generales */
+.objetivoMaestria {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Usamos 100% en lugar de un valor fijo en píxeles */
+    height: auto; /* Ajustamos la altura a automático para que se adapte */
+    background: #A7C741;
+    padding: 5% 10%; /* Usamos porcentajes para un padding flexible */
+    align-items: center;
+    overflow-x: auto; /* Agregamos una barra de desplazamiento horizontal si es necesario */
+}
+
+.objetivoMaestriaTitulo {
+    display: flex;
+    flex-shrink: 0;
+    margin-bottom: 5%;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 5vw; /* Tamaño de fuente relativo al tamaño de la pantalla */
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+}
+
+.objetivoMaestriaCont {
+    width: 100%; /* Usamos 100% en lugar de un valor fijo en píxeles */
+    max-width: 1200px; /* Definimos un máximo para no sobrepasar el contenedor */
+    height: auto;
+    padding-top: 2vw;
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 2.5vw; /* Tamaño de fuente relativo al tamaño de la pantalla */
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+/************** Estilos para el perfil de ingreso ****************/
+.perfilIngresoMaestria {
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido en dos columnas */
+    align-items: center;
+    padding: 5%;
+    width: 100%;
+}
+
+.perfilIngresoMaestriaBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8%;
+}
+
+.perfilIngresoMaestriaTitulo {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.perfilIngresoMaestriaCont {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: normal;
+}
+
+.perfilIngresoMaestria img {
+    width: 35%;
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
+    margin-top: 20px;
+}
+
+
+.tarjetasMC {
+    margin-top: 5%;
+    width: 100%;
+    overflow-x: auto; 
+    align-items: center;
+}
+
+.tituloTarTextoMC {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Montserrat;
+    font-size: 2rem; /* Usamos rem para un tamaño más consistente */
+    font-weight: 700;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%; /* Usamos porcentaje para el ancho */
+}
+
+/************** Egreso **************/
+.egreso {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* Imagen de fondo para cubrir todo el contenedor .egreso */
+.egreso-img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsión */
+    z-index: -1; /* Para que quede detrás del contenido */
+}
+
+.tituloEgreso {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 5%;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 55px; /* Tamaño de fuente relativo al tamaño de la pantalla */
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.textoEgreso {
+    position: absolute;
+    width: 90%; /* Usamos porcentaje para que se ajuste al tamaño de la pantalla */
+    height: auto;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px; /* Tamaño de fuente relativo al tamaño de la pantalla */
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 1px;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+/************** Proceso Administrativo **************/
+
+.procesoAdministrativo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.procesoAdministrativoTitulo {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 55px; /* Tamaño de fuente relativo al tamaño de la pantalla */
+    font-weight: 600;
+    line-height: normal;
+    flex-shrink: 0;
+}
+
+.procesoAdministrativoFechas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.procesoAdministrativoFechasTitulo {
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px; /* Tamaño de fuente relativo al tamaño de la pantalla */
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5%;
+}
+
+.procesoAdministrativoFechasTexto {
+    width: 90%; /* Usamos porcentaje para que se ajuste al tamaño de la pantalla */
+    flex-shrink: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 32px; /* Tamaño de fuente relativo al tamaño de la pantalla */
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 2%;
+}
+
+.procesoAdministrativoDocumentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    background: #06052D;
+    padding: 5%;
+}
+
+.procesoAdministrativoDocumentacionTitulo {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 55px; /* Tamaño de fuente relativo al tamaño de la pantalla */
+    font-weight: 700;
+    line-height: normal;
+}
+
+.procesoAdministrativoDocumentacionTexto {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 32px; /* Tamaño de fuente relativo al tamaño de la pantalla */
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 90%; /* Usamos porcentaje para que se ajuste al tamaño de la pantalla */
+}
+
+/************** Aviso y Documentación **************/
+
+.avisoMC,
+.informesMC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.avisoMCTitulo,
+.informesMCTitulo {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px; /* Tamaño de fuente relativo al tamaño de la pantalla */
+    font-weight: 700;
+    line-height: normal;
+}
+
+.avisoMCTexto,
+.informesMCTexto {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 32px; /* Tamaño de fuente relativo al tamaño de la pantalla */
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 2%;
+    width: 90%; /* Usamos porcentaje para que se ajuste al tamaño de la pantalla */
+}
+
+.avisoMCTexto a,
+.informesMCTexto a {
+    color: #000;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+}
+
+@media (max-width: 768px) {
+
+  .objetivoMaestria {
+    padding: 8% 5%;
+  }
+
+  .objetivoMaestriaTitulo {
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .objetivoMaestriaCont {
+    font-size: 4.5vw;
+  }
+
+  .perfilIngresoMaestria {
+    flex-direction: column;
+    align-items: center;
+    padding: 8%;
+  }
+
+  .perfilIngresoMaestriaBox {
+    padding: 5% 0;
+  }
+
+  .perfilIngresoMaestriaTitulo {
+    font-size: 32px;
+  }
+
+  .perfilIngresoMaestriaCont {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .perfilIngresoMaestria img {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .tituloTarTextoMC {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+    .egreso {
+    height: 400px; /* o incluso 100vh si quieres que llene toda la pantalla */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .egreso-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Muy importante */
+    z-index: -1;
+  }
+
+  .tituloEgreso {
+    font-size: 24px;
+    text-align: center;
+    margin: 10% auto 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .textoEgreso {
+    font-size: 16px;
+    width: 90%;
+    margin: 5% auto;
+    text-align: justify;
+    position: relative;
+    z-index: 1;
+  }
+
+  .procesoAdministrativoTitulo {
+    font-size: 32px;
+  }
+
+  .procesoAdministrativoFechasTitulo {
+    font-size: 24px;
+  }
+
+  .procesoAdministrativoFechasTexto {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .procesoAdministrativoDocumentacionTitulo {
+    font-size: 32px;
+  }
+
+  .procesoAdministrativoDocumentacionTexto {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .avisoMCTitulo,
+  .informesMCTitulo {
+    font-size: 24px;
+  }
+
+  .avisoMCTexto,
+  .informesMCTexto {
+    font-size: 16px;
+    width: 95%;
+  }
+
+  .avisoMCTexto a,
+  .informesMCTexto a {
+    word-break: break-word;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (min-height: 512px) and (max-height: 1366px){
+    .perfilIngresoMaestriaTitulo{
+        font-size: 35px;
+    }
+    
+    .perfilIngresoMaestriaCont{
+        font-size: 22px;
+    }
+
+    .egreso{
+        height: 440px;
+    }
+
+    .textoEgreso{
+        font-size: 22px;
+    }
+
+    .tituloEgreso{
+        font-size: 35px;
+    }
+
+    .procesoAdministrativoFechasTitulo{
+        font-size: 25px;
+    }
+    
+    .procesoAdministrativoDocumentacionTitulo{
+        font-size: 25px;
+    }
+
+    .procesoAdministrativoDocumentacionTexto{
+        font-size: 25px;
+    }
+
+    .avisoMCTexto{
+        font-size: 25px;
+    }
+
+    .procesoAdministrativoFechasTexto{
+        font-size: 25px;
+    }
+
+    .procesoAdministrativoTitulo{
+        font-size: 35px;
+    }
+
+    .informesMCTexto{
+        font-size: 25px;
+    }
+}
+@media (max-width: 767px) {
+  .solo-escritorio {
+    display: none;
+  }
+}

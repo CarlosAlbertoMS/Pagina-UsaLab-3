@@ -1,0 +1,195 @@
+/* Carousel */
+.contenedorImageText {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tipografiaImageText {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* --------- Animaciones del carousel --------- */
+/* Reducir el brillo de la imagen */
+.slide-image.dimmed {
+    filter: brightness(0.5);
+    transition: filter 0.5s ease;
+}
+
+.slide-image.offset {
+    transform: translateY(24px);
+}
+
+/* Animaciones para el título */
+.slide-title {
+    transition: all 0.5s ease;
+}
+
+.slide-title.shrink {
+    transform: translateX(-5%) scale(0.6);
+    width: 60%;
+    opacity: 0.7;
+}
+
+.slide-title.shrink br.responsive {
+    display: none;
+}
+
+/* Animaciones para el texto adicional */
+.extra-text {
+    width: 50%;
+    height: 40%;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+    right: 4%;
+    margin-top: 3rem;
+    transform: translateY(-50%) translateX(20%); /* Desplazamiento inicial */
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Texto adicional cuando se muestra */
+.extra-text.show {
+    opacity: 1;
+    transform: translateY(-35%) translateX(0); /* Animación hacia su posición final */
+}
+
+.btn-mas-info {
+    /* Layout */
+    width: 40%;
+    height: auto;
+    flex-shrink: 0;
+    
+    /* Style */
+    border-radius: var(--Corner-Full, 1000px);
+    background: #06052D;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+    /* Text & Border */
+    border: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1rem;
+    padding: 0.6rem 0;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+    
+    /* Position */
+    margin-top: 1.5rem;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-fade .carousel-item {
+    transition: opacity .4s ease-in-out; /* Reduced from default .6s */
+}
+
+.carousel-fade .carousel-item .active.item {
+    transition: opacity .6s ease-in-out; /* Reduced from default .6s */
+}
+
+.carousel-fade .next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
+    transition: opacity .6s ease-in-out; /* Reduced from default .6s */
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 4%;
+    height: calc(100% - var(--margin-med));
+    margin-top: var(--margin-med);
+}
+
+@media (max-width: 1024px) {
+    .slide-title.shrink {
+        display: none;
+    }
+
+    .tipografiaImageText {
+        font-size: 1.5rem;
+    }
+
+    .extra-text {
+        width: 84%;
+        right: 8%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 8%;
+    }
+}
+
+@media (max-width: 820px) {
+    .btn-mas-info {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        min-height: 15rem;
+        object-fit: cover;
+    }
+
+    .contenedorImageText {
+        padding-bottom: 2.5rem;;
+    }
+
+    .tipografiaImageText {
+        font-size: 1.2rem;
+    }
+
+    .extra-text {
+        width: 98%;
+        right: 1%;
+        font-size: 0.9rem;
+        height: auto;
+        /* margin-top: 1px !important; */
+        transform: translate(0%, -80%) !important;
+        border: solid cyan 2px;
+    }
+
+    .btn-mas-info {
+        display: none;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 46%;
+        margin-top: calc(14rem);
+        height: 2.5rem;
+    }
+
+    .carousel-control-prev {
+        left: 2%;
+    }
+
+    .carousel-control-next {
+        right: 2%;
+    }
+}

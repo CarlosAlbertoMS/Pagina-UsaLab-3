@@ -1,0 +1,77 @@
+/* Estilos para el contenedor de la sección */
+.tecnicasDeEstudioDeUsabilidadContainer {
+    width: 100%;
+
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+/* Contenedor del título de la sección */
+.tecnicasDeEstudioDeUsabilidadTitleContainer {
+    width: 100%;
+    height: 324px;
+    margin-bottom: 99px;
+    background: url(../../../img/tecnicas-de-estudios-de-usabilidad.png) lightgray 50% / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilo del titulo de la sección */
+.tecnicasDeEstudioDeUsabilidadTitle {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.55px;
+}
+
+/* Estilo del texto de la sección */
+.tecnicasDeEstudioDeUsabilidadText {
+    width: 80%;
+    height: auto;
+    margin-bottom: 80px;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    hyphens: auto;
+}
+
+@media(max-width:500px){
+.tecnicasDeEstudioDeUsabilidadText{
+        
+        font-size:22px;
+       
+    }
+}
+
+/* Estilo del contenedor de las cards de la sección */
+.tecnicasDeEstudioDeUsabilidadCardsContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+   
+    gap: 6px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+/* Mostrar la barra de desplazamiento al hacer hover */
+.tecnicasDeEstudioDeUsabilidadCardsContainer:hover {
+    overflow-x: auto; /* Mostrar la barra de desplazamiento al hacer hover */
+}
