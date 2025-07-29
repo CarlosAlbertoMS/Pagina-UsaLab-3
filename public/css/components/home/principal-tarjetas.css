@@ -46,7 +46,6 @@
 .card-button {
     flex-shrink: 0;
     border-radius: var(--Corner-Full, 1000px);
-    border: 0.5px solid #FFF;
     z-index: 1;
     text-align: center;
     font-family: Montserrat;
