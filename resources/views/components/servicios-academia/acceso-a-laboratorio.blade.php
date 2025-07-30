@@ -18,7 +18,7 @@
             <!-- Titulo de la card -->
             <div class="pasoParaReservacionCardTitle">Solicitud Previa</div>
             <!-- Texto de la card -->
-            <div class="pasoParaReservacionCardText">Para acceder al laboratorio, es necesario realizar una solicitud previa a través de nuestro sistema de reservas, donde podrás seleccionar el día y la hora disponibles. <u>Hablemos.</u></div>
+            <div class="pasoParaReservacionCardText">Para acceder al laboratorio, es necesario realizar una solicitud previa a través de nuestro sistema de reservas, donde podrás seleccionar el día y la hora disponibles. <br> <br> <u style="cursor: pointer;" onclick="window.location.href='{{ url('/trabajemos-juntos') }}'">Hablemos.</u></div>
         </div>
 
         <!-- Card del "Paso 2" -->
