@@ -36,21 +36,27 @@
 .textAreaContainer {
     position: relative;
 }
-/* Estilo para el contenedor para los términos y condiciones */
-.terminosYBotonContainer {
+/* Estilo para el contenedor de términos y condiciones */
+.checkBoxTerminosYCondiciones {
+    width: 100%;
     display: flex;
-    gap: 30px;
-    align-items: center;
+}
+/* Estilo para el checkbox */
+#acepto {
+    height: 18px;
+    width: 18px;
+    margin: 6px;
 }
 /* Estilo para Términos y condiciones */
 .terminosYCondiciones {
-    width: 722px;
+    width: 100%;
     color: #000;
     font-family: "Arno Pro";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: justify;
 }
 /* Estilo para Botón enviar */
 .boton-enviar {
@@ -59,6 +65,7 @@
     flex-shrink: 0;
     border-radius: var(--Corner-Full, 1000px);
     background: #06052D;
+    align-self: center;
     
     /* Propiedades de texto */
     color: #FFF;
@@ -152,17 +159,17 @@ textarea {
 @media (max-width: 680px) {
     /* --- Ajustes del Formulario --- */
 
-    /* Contenedor de Términos y Botón */
-    .terminosYBotonContainer {
-        flex-direction: column; /* Apila los elementos (botón abajo) */
-        align-items: center;   /* Centra los elementos horizontalmente (el botón) */
-        gap: 25px;             /* Espacio entre el texto y el botón */
+    /* Estilo para el checkbox */
+    #acepto {
+        height: 12px;
+        width: 12px;
+        margin: 3px;
     }
 
     /* Texto de Términos y Condiciones */
     .terminosYCondiciones {
         width: 100%;           /* Ocupa todo el ancho disponible */
-        text-align: center;    /* Centra el texto de los términos */
+        text-align: justify;    /* Centra el texto de los términos */
         font-size: 16px;       /* Opcional: Reduce tamaño de fuente si es necesario */
         order: 1;              /* Asegura que el texto vaya primero (por si acaso) */
     }
@@ -205,8 +212,7 @@ textarea {
      }
 
     .frase {
-        text-align: justify;    /* Justifica el texto */
-        text-align-last: center;/* Centra la última línea */
+        text-align: right;    /* Justifica el texto */
         font-size: 28px;        /* Reduce tamaño de fuente */
         margin-top: 100px;      /* Reduce margen superior */
         margin-bottom: 100px;   /* Reduce margen inferior */

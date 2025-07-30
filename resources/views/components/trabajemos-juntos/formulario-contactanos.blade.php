@@ -36,19 +36,21 @@
         <!-- Campo para la empresa -->
         <div class="inputContainer">
             <input type="text" name="empresa" id="empresa" required>
-            <label for="apellidos">Empresa</label>
+            <label for="empresa">Empresa</label>
         </div>
         <!-- Campo para háblanos de tu proyecto -->
         <div class="textAreaContainer">
             <textarea name="hablanos-de-tu-proyecto" id="hablanos-de-tu-proyecto" required></textarea>
             <label for="hablanos-de-tu-proyecto">Háblanos de tu proyecto</label>
         </div>
-        <!-- Contenedor para los términos y condiciones -->
-        <div class="terminosYBotonContainer">
+        <!-- Contenedor para los términos y condiciones y su checkbox -->
+        <div class="checkBoxTerminosYCondiciones">
+            <!-- Checkbox -->
+            <input type="checkbox" name="acepto" id="acepto" required>
             <!-- Términos y condiciones -->
             <div class="terminosYCondiciones">Al proporcionar tus datos aceptas los términos y condiciones de uso y las políticas de privacidad de UsaLab. De igual forma, aceptas que podamos contactarte para reforzar nuestra oferta comercial o invitarte a estudios que realizamos con nuestros clientes.</div>
-            <!-- Botón enviar -->
-            <input type="submit" class="boton-enviar" value="Enviar">
         </div>
+        <!-- Botón enviar -->
+        <input type="submit" class="boton-enviar" value="Enviar">
     </form>
 </div>
