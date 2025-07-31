@@ -256,9 +256,9 @@
           <a href="https://www.facebook.com/profile.php?id=100057657099727">
             <img class="facebook" src="{{ asset('icons/mdi_facebook.svg') }}" />
           </a>
-          <a href="">
+          <!-- <a href="">
             <img class="link12" src="{{ asset('icons/ic_round-link.svg') }}" />
-          </a>
+          </a> -->
         </div>
       </div>
     <!-- Seccion menú rápido -->
