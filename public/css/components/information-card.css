@@ -71,9 +71,9 @@
 }
 /* Estilo para el texto de la card */
 .textoInformationCard {
-    margin-left: 5%;
+    margin: 5%;
     width: 100%; 
-    padding-right: 5%;   
+    padding-right: 10%;   
     height: auto;
     flex-shrink: 0;
     color: #000;
