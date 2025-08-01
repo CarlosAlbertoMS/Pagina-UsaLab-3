@@ -6,8 +6,9 @@
 <div class="separador5"></div>
 
 <!-- Seccion clientes -->
-<div class="clientesContainer">
-  <div class="clientes-container">
-    <div class="img-wrapper"></div>
-  </div>
+<div class="clientes-container">
+    <div class="slider">
+        <div class="img-slide"></div>
+        <div class="img-slide"></div>
+    </div>
 </div>
