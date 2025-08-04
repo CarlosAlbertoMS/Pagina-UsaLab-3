@@ -400,32 +400,40 @@ trayectoriaContent {
     gap: 80px;
 }
 
-/* Este es el contenedor que probablemente quieres centrar */
 .clientes-container {
     width: 85%;
-    /* Ancho fijo */
-    height: 912px;
+    height: 100%;
     overflow: hidden;
     position: relative;
-
-    /* --- Añadir estas líneas para centrar horizontalmente --- */
-    margin-left: center;
-
-    /* --- Fin de líneas añadidas --- */
+    margin: 0 auto;
 }
 
-/*Imagneses clientes*/
-.img-wrapper {
-    width: 100%;
+/* Carrusel con doble imagen */
+.slider {
+    display: flex;
+    width: calc(2196px * 2); /* Dos imágenes escaladas */
     height: 100%;
-    background-image: url(../img/Component\ 5.png);
-    background-size: auto 100%;
     animation: move 35s linear infinite;
 }
 
+/* Imagen escalada a 1224px x 517px */
+.img-slide {
+    width: 2196px;
+    height: 100%;
+    background-image: url('../img/Component 5.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* estira la imagen para encajar exactamente */
+    background-position: left center;
+    flex-shrink: 0;
+}
+
+/* Mover exactamente lo visible */
 @keyframes move {
-    to {
-        background-position: 4998px;
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-2196px);
     }
 }
 
@@ -1161,5 +1169,30 @@ trayectoriaContent {
     /* 🔹 Orden opcional invertido */
     .orden-invertido {
         order: -1;
+    }
+
+    /* Carrusel infinito */
+    .clientes-container {
+        height: 250px;
+    }
+
+    .img-slide {
+        height: 250px;
+        width: 591px;
+        background-size: 100% 100%;
+    }
+
+    .slider {
+        width: 1182px; /* 591px * 2 */
+        animation: move-mobile 20s linear infinite;
+    }
+
+    @keyframes move-mobile {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-591px);
+        }
     }
 }

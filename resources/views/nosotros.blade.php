@@ -135,10 +135,11 @@
         <div class="colaboracionestitle">Colaboraciones</div>
         <div class="separador5"></div>
         <div class="clientesContainer">
-            <!-- Contenido de la seccion -->
             <div class="clientes-container">
-                <!-- Imagen de colaboraciones -->
-                <div class="img-wrapper"></div>
+                <div class="slider">
+                    <div class="img-slide"></div>
+                    <div class="img-slide"></div>
+                </div>
             </div>
             <div class="colaboracionescont">
                 <!-- Contenido de colaboraciones -->
