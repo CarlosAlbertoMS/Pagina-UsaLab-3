@@ -49,7 +49,7 @@
           </div>
 
           <div class="acercade">
-            <div onclick="window.location.href='{{ url('/nosotros') }}'" class="navbartxt">Acerca de</div>
+            <div onclick="window.location.href='{{ url('/nosotros') }}'" class="navbartxt">Acerca de <span class="icono1">&#9660;</span> </div>
             <!-- Contenido acerca de -->
             <div class="acercadeCont">
               <div onclick="window.location.href='{{ url('/nosotros#mision') }}'"class="adcontent">
@@ -79,14 +79,14 @@
 
           <!-- Seccion servicios -->
           <div class="servicios">
-  <div class="navbartxt">Servicios</div>
+  <div class="navbartxt">Servicios <span class="icono1">&#9660;</span> </div>
   <!-- Nivel 1: Contenedor de primer nivel de "Servicios" -->
   <div class="serviciosCont">
 
     <!-- Bloque 1: Industria -->
     <div class="srcontent">
       <!-- Texto clickable "Industria" -->
-      <div onclick="window.location.href='{{ url('/servicios-industria') }}'" class="navbartxt">Industria</div>
+      <div onclick="window.location.href='{{ url('/servicios-industria') }}'" class="navbartxt">Industria <span class="icono1">&#9654;</span></div>
       <!-- Sub-submenú: se despliega a la derecha al hacer hover en .srcontent -->
       <div class="servicioindustriaCont">
         <!-- Aquí van las subopciones específicas de Industria -->
@@ -114,7 +114,7 @@
     <!-- Bloque 2: Academia -->
     <div class="srcontent">
       <!-- Texto clickable "Academia" -->
-      <div onclick="window.location.href='{{ url('/servicios-academia') }}'" class="navbartxt">Academia</div>
+      <div onclick="window.location.href='{{ url('/servicios-academia') }}'" class="navbartxt">Academia <span class="icono1">&#9654;</span></div>
       <!-- Sub-submenú: se despliega a la derecha al hacer hover en .srcontent -->
       <div class="servicioacademiaCont">
         <!-- Aquí van las subopciones específicas de Academia -->
@@ -140,7 +140,7 @@
           <!-- Seccion Investigaciones -->
           <div class="investigaciones">
             <!-- Redirección a la ventana "Investigaciones" -->
-            <div onclick="window.location.href='{{ url('/investigaciones') }}'" class="navbartxt">Investigaciones</div>
+            <div onclick="window.location.href='{{ url('/investigaciones') }}'" class="navbartxt">Investigaciones <span class="icono1">&#9660;</span> </div>
             <div class="investigacionesCont">
               <div class="incontent">
                 <!-- Redirección a la sección "Proyectos actuales" en la ventana "Investigaciones" -->
@@ -164,7 +164,7 @@
 
           <!-- Seccion formacion academica -->
           <div class="formacion">
-            <div onclick="window.location.href='{{ url('/academica') }}'" class="navbartxt">Academia</div>
+            <div onclick="window.location.href='{{ url('/academica') }}'" class="navbartxt">Academia <span class="icono1">&#9660;</span> </div>
             <div class="formacionCont">
               <div onclick="window.location.href='{{ url('/academica#pruebausalab') }}'" class="facontent">
                 <div class="navbartxt">Pruebas de Usabilidad</div>
@@ -187,7 +187,7 @@
 
           <!-- Seccion Eventos -->
           <div class="eventos">
-            <div onclick="window.location.href='{{ url('/eventos') }}'" class="navbartxt">Eventos</div>
+            <div onclick="window.location.href='{{ url('/eventos') }}'" class="navbartxt">Eventos <span class="icono1">&#9660;</span></div>
             <div class="eventosCont">
               <div class="evcontent">
                 <!-- Redirección a la sección ultimos eventos -->
