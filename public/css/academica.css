@@ -37,6 +37,7 @@
     display: flex;
     margin-bottom: -5vh;
     margin-left: 0;
+    padding: 2%;
     flex-shrink: 0;
     background: rgba(0, 0, 0, 0.30);
     justify-content: center;
