@@ -17,10 +17,6 @@ body {
 }
 
 /* ----- La cosa esa de hasta arriba ----- */ 
-.carousel-inner {
-    object-fit: contain;
-    margin-top: var(--margin-med);
-}
 
 .img-container {
     width: 100%;

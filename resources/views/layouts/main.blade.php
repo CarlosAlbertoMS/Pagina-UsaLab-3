@@ -216,8 +216,6 @@
       </div>
       </div>
       <div id="navSpacer"></div>
-      <!-- Termina barra de navegación -->
-      <div class="separador"></div>
     </header>
     <!-- Seccion principal -->
     <main>
