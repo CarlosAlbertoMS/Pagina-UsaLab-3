@@ -397,7 +397,7 @@ trayectoriaContent {
     /* justify-content: center; */
     /* Si no, déjalo como estaba o ajústalo según necesites para otros hijos: */
     justify-content: flex-start;
-    gap: 80px;
+    /* gap: 80px; */
 }
 
 .clientes-container {
@@ -413,7 +413,7 @@ trayectoriaContent {
     display: flex;
     width: calc(2196px * 2); /* Dos imágenes escaladas */
     height: 100%;
-    animation: move 35s linear infinite;
+    animation: move 45s linear infinite;
 }
 
 /* Imagen escalada a 1224px x 517px */
@@ -442,6 +442,8 @@ trayectoriaContent {
     display: flex;
     flex-direction: column;
     gap: 80px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 /*Contenedor text colaboraciones*/

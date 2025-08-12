@@ -31,7 +31,7 @@
 .slider {
     display: flex;
     width: calc(4998px * 2); /* Dos copias de la imagen */
-    animation: move 35s linear infinite;
+    animation: move 70s linear infinite;
 }
 
 /***** Cada copia de la imagen *****/
